@@ -1,0 +1,151 @@
+.App-cal {
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+  background-color: #dde1e7;
+  border-radius: 10px;
+  padding: 32px 16px;
+  width: 320px;
+  margin: 100px auto;
+  box-shadow: 9px 9px 100px #070606, -6px -6px 20px #0e0c0c;
+}
+.calculator-app-heading {
+  text-align: center;
+  margin-top: 30px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 32px;
+  font-weight: bold;
+  text-shadow: 3px 5px 5px rgba(91, 118, 135, 0.9);
+  margin-top: -100px;
+}
+
+.display-cal {
+  margin-bottom: 20px;
+  font-weight: bold;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  text-align: right;
+  box-shadow: inset 2px 2px 5px #aa939373, inset -5px -5px 10px #171821;
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  width: 100%;
+  max-width: 320px;
+  height: 150px;
+  font-size: 32px;
+  overflow: auto;
+}
+
+.buttons-cal {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 10px;
+  justify-items: center;
+  align-items: center;
+}
+
+button.cal-digits {
+  background-color: #dde1e7;
+}
+button.operator {
+  background-color: rgb(78, 11, 203, 0.2);
+  color: rgb(198, 188, 188);
+  border-radius: 50%;
+}
+
+button.operator:hover {
+  background-color: rgb(78, 11, 203, 0.5);
+}
+
+button.operator:active {
+  background-color: rgba(54, 12, 133, 0.8);
+}
+
+button.bracket {
+  background-color: rgb(0, 85, 153, 0.2);
+  color: #fff;
+}
+
+button.bracket:hover {
+  background-color: rgb(0, 85, 153, 0.5);
+}
+
+button.bracket:active {
+  background-color: rgba(2, 68, 122, 0.8);
+}
+
+button.clear {
+  background-color: rgb(227, 125, 47, 0.2);
+  color: #fff;
+}
+
+button.clear:hover {
+  background-color: rgb(227, 125, 47, 0.5);
+}
+button.clear:active {
+  background-color: rgba(122, 59, 10, 0.8);
+}
+
+button.delete {
+  background-color: rgba(245, 11, 27, 0.2);
+  color: #fff;
+  font-size: 18px;
+}
+
+button.delete:hover {
+  background-color: rgba(245, 11, 27, 0.5);
+}
+
+button.delete:active {
+  background-color: rgba(149, 9, 18, 0.8);
+}
+
+button.equals {
+  background-color: rgb(114, 54, 226, 0.8);
+  color: #fff;
+}
+
+button.equals:hover {
+  background-color: #7d50c5;
+}
+
+button.equals:active {
+  background-color: rgba(83, 44, 147, 0.8);
+}
+
+button:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px #0af;
+}
+
+button:disabled {
+  background-color: #ccc;
+  color: #888;
+  cursor: no-drop;
+  box-shadow: none;
+}
+
+.buttons-cal button {
+  color: #fff;
+  font-size: 100px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 40px;
+  box-shadow: 2px 2px 5px #aa939373, -5px -5px 10px #171821;
+  transition: transform 0.2s ease;
+  cursor: pointer;
+  grid-gap: 1rem;
+  font-size: 19px;
+}
+
+button:hover {
+  transform: translateY(-2px);
+}
+
+button:active {
+  transform: translateY(2px);
+  box-shadow: none;
+}
+.decimal-button {
+  background-color: #dde1e7;
+}
