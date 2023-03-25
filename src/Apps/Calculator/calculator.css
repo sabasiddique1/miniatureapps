@@ -1,7 +1,7 @@
 .App-cal {
   font-family: "Roboto", sans-serif;
   text-align: center;
-  background-color: #dde1e7;
+  background-color:  rgb(79, 72, 72);
   border-radius: 10px;
   padding: 32px 16px;
   width: 320px;
@@ -14,18 +14,20 @@
   font-family: Arial, Helvetica, sans-serif;
   font-size: 32px;
   font-weight: bold;
-  text-shadow: 3px 5px 5px rgba(91, 118, 135, 0.9);
-  margin-top: -100px;
+  /* text-shadow: 3px 5px 5px rgba(91, 118, 135, 0.9); */
+  margin-top: -100px;  
+  color: rgb(173, 164, 166);
+  text-shadow: 2px 3px 5px rgb(101, 96, 98);
 }
 
 .display-cal {
   margin-bottom: 20px;
   font-weight: bold;
-  background-color: #fff;
+  background-color: rgb(116, 101, 101);
   border: 1px solid #ccc;
   border-radius: 5px;
   text-align: right;
-  box-shadow: inset 2px 2px 5px #aa939373, inset -5px -5px 10px #171821;
+  box-shadow: inset 2px 2px 5px #aa939373, inset -5px -5px 10px #474344;
   display: flex;
   justify-content: right;
   align-items: center;
@@ -45,7 +47,7 @@
 }
 
 button.cal-digits {
-  background-color: #dde1e7;
+  background-color: #63484d;
 }
 button.operator {
   background-color: rgb(78, 11, 203, 0.2);
@@ -101,22 +103,22 @@ button.delete:active {
 }
 
 button.equals {
-  background-color: rgb(114, 54, 226, 0.8);
+  background-color: rgba(77, 67, 95, 0.8);
   color: #fff;
 }
 
 button.equals:hover {
-  background-color: #7d50c5;
+  background-color: #5a4281;
 }
 
 button.equals:active {
   background-color: rgba(83, 44, 147, 0.8);
 }
 
-button:focus {
+/* button:focus {
   outline: none;
   box-shadow: 0 0 0 2px #0af;
-}
+} */
 
 button:disabled {
   background-color: #ccc;
@@ -147,5 +149,5 @@ button:active {
   box-shadow: none;
 }
 .decimal-button {
-  background-color: #dde1e7;
+  background-color: #63484d;
 }

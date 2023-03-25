@@ -6,18 +6,20 @@
   align-items: center;
   padding: 50px;
   margin-bottom: 130px;
+  
 }
 .create-new-task-btn {
   margin-top: 100px;
 }
-
+/* 
 .todo-app-heading-h1 {
   text-align: center;
   margin-bottom: 50px;
   margin-top: 50px;
   font-size: 40px;
   font-family: Arial, Helvetica, sans-serif;
-}
+  color: whitesmoke;
+} */
 
 .add-todo {
   margin-bottom: 20px;
@@ -39,7 +41,8 @@
 .header-heading {
   margin-top: 10px;
   text-align: center;
-  border-bottom: 1px solid rgb(0, 0, 0, 0.2);
+  border-bottom: 1px solid rgba(224, 209, 209, 0.2);
+  color:rgb(211, 211, 202);
 }
 
 .todo-container {
@@ -47,7 +50,6 @@
   flex-direction: column;
   width: 100%;
   max-width: 600px;
-
   border: 1px solid #ccc;
   border-radius: 20px;
   box-shadow: 0px 0px 5px #ccc;
@@ -63,11 +65,20 @@
   top: 0;
   right: 0;
   width: 430px;
-  height: 78vh;
+  height: 80vh;
   overflow-y: auto;
-  background-color: #f7f7f7;
+
   box-shadow: -1px 0 10px rgba(0, 0, 0, 0.2);
   padding: 20px;
+  background-color:  rgb(36, 33, 33);
+border: none;
+
+  box-sizing: border-box;
+  background-color:  rgb(36, 33, 33);
+
+  box-shadow: inset -20px -20px 100px rgb(32, 29, 29),
+    20px 20px 400px rgb(12, 14, 7);
+  border-radius: 30px;
 }
 
 .todo-header {
@@ -76,7 +87,7 @@
   padding: 10px;
   background-color: #f2f2f2;
   border-radius: 5px 5px 0 0;
-  border-bottom: 1px solid #ccc;
+  border-bottom: 1px solid rgb(220, 204, 204);
   background-color: transparent;
   border-bottom: none;
 
@@ -90,6 +101,10 @@
   border: none;
   font-size: 16px;
   text-transform: capitalize;
+  background-color: rgb(74, 65, 65);
+  color:rgb(232, 219, 219);
+  box-shadow: inset 0px 2px 4px rgba(0, 0, 0, 0.25);
+
 }
 
 .todo-body {
@@ -103,16 +118,21 @@
   font-weight: bold;
   margin-top: 10px;
   margin-bottom: 5px;
+  color:rgb(211, 211, 202);
+
 }
 
 .todo-body textarea {
   height: 100px;
   padding: 10px;
   border-radius: 5px;
-  border: 1px solid #ccc;
+  border: none;
   font-size: 16px;
   margin-bottom: 10px;
   text-transform: capitalize;
+  background-color: rgb(74, 65, 65);
+  color:rgb(232, 219, 219);
+  box-shadow: inset 0px 2px 4px rgba(0, 0, 0, 0.25);
 }
 
 .todo-body input[type="date"],
@@ -120,9 +140,12 @@
   width: 100%;
   padding: 10px;
   border-radius: 5px;
-  border: 1px solid #ccc;
+  border: none;
   font-size: 16px;
   margin-bottom: 10px;
+ background-color: rgb(74, 65, 65);
+  color:rgb(232, 219, 219);
+
 }
 
 .todo-list {
@@ -134,6 +157,7 @@
   margin-left: 250px;
   border: none;
   box-sizing: border-box;
+  background-color:  rgb(36, 33, 33);
 
   box-shadow: inset -20px -20px 100px rgb(32, 29, 29),
     20px 20px 400px rgb(12, 14, 7);
@@ -144,7 +168,7 @@
 .todo-item {
   display: flex;
   flex-direction: column;
-  margin-bottom: 10px;
+  margin-bottom: 40px;
   border: 1px solid #ccc;
   border-radius: 20px;
   box-shadow: 0px 0px 5px #ccc;
@@ -165,19 +189,22 @@
   justify-content: space-between;
   align-items: center;
   padding: 10px;
-  background-color: #f2f2f2;
+  background-color:  rgb(48, 43, 43);
+
   border-radius: 5px 5px 0 0;
   border-bottom: 1px solid #ccc;
   border: none;
   border-radius: 10px;
 }
+.priority-button{
+  background-color:  rgb(36, 33, 33);
 
+}
 .priority-buttons {
   display: flex;
   align-items: center;
   justify-content: space-between;
   margin-bottom: 20px;
-
   border: none;
   border-radius: 30px;
   padding: 10px 20px;
@@ -201,9 +228,9 @@
   color: #fff;
 }
 
-.priority-button:focus {
+/* .priority-buttons:focus {
   border: 1px solid transparent;
-}
+} */
 
 input[type="checkbox"] {
   appearance: none;
@@ -284,12 +311,13 @@ input[type="checkbox"]:checked {
   margin-left: 20px;
   margin-top: 20px;
   margin-bottom: 20px;
+  
 }
 .todo-add-btn {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  padding: 8px 155px;
+  padding: 8px 135px;
   justify-content: right;
   border: none;
   border-radius: 4px;
@@ -302,22 +330,25 @@ input[type="checkbox"]:checked {
   margin-top: 10px;
 }
 
-/* .todo-cancel-btn:hover {
-  background-color: #b71c1c;
-} */
 
 .todo-add-btn {
-  color: #fff;
-  background-color: #67e390;
+  color: rgb(189, 172, 172);
+  background-color: rgba(16, 75, 44, 0.6);
+  text-shadow: 1px 1px 6px rgb(167, 167, 156);
+  letter-spacing: 7px;
+ 
 }
 
 .todo-add-btn:hover {
-  background-color: #388e3c;
+  background-color: #1e5021;
 }
 
 .header-label-task {
   font-weight: bold;
   margin-bottom: 5px;
+  color:rgb(211, 211, 202);
+
+
 }
 
 .todo-item-actions .todo-edit-button {
@@ -325,6 +356,8 @@ input[type="checkbox"]:checked {
   border: none;
   font-size: 20px;
   color: white;
+  
+
 }
 
 .todo-item-actions .todo-delete-button {
@@ -341,10 +374,11 @@ input[type="checkbox"]:checked {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-color: #f5f5f5;
-  padding: 16px;
+  background-color:  rgb(48, 43, 43);
   border-radius: 8px;
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+  margin-top: 5px;
+  padding: 20px;
 }
 
 .todo-item-edit input[type="text"],
@@ -357,6 +391,10 @@ input[type="checkbox"]:checked {
   box-shadow: inset 0px 2px 4px rgba(0, 0, 0, 0.25);
   font-size: 16px;
   text-transform: capitalize;
+  background-color: rgb(74, 65, 65);
+  color:rgb(232, 219, 219);
+
+  
 }
 
 .todo-item-edit button {
@@ -364,11 +402,13 @@ input[type="checkbox"]:checked {
   margin: 8px;
   border: none;
   border-radius: 4px;
-  background-color: #4caf50;
-  color: white;
   font-size: 16px;
   cursor: pointer;
   margin-left: 10px;
+  color: rgb(189, 172, 172);
+  background-color: rgba(39, 174, 102, 0.6);
+  text-shadow: 1px 1px 6px rgb(167, 167, 156);
+  letter-spacing: 4px;
 }
 
 .todo-item-edit button:hover {
@@ -376,7 +416,7 @@ input[type="checkbox"]:checked {
 }
 
 .work {
-  color: hsl(195, 83%, 48%);
+  color: hsl(195, 89%, 55%);
   border: none;
   border-radius: 30px;
   padding: 10px 20px;
@@ -386,11 +426,11 @@ input[type="checkbox"]:checked {
 }
 
 .personal {
-  color: rgb(39, 160, 39);
+  color: rgb(243, 161, 176);
   border: none;
   border-radius: 30px;
   padding: 10px 20px;
-  background-color: rgba(95, 163, 95, 0.5);
+  background-color: rgba(164, 40, 65, 0.5);
 
   font-weight: bolder;
   margin-left: -5px;
@@ -434,14 +474,14 @@ input[type="checkbox"]:checked {
 }
 
 .low {
-  color: rgb(40, 213, 196);
+  color: rgb(25, 92, 85);
   border: none;
   border-radius: 30px;
   padding: 10px 20px;
   margin-right: 20px;
   text-align: center;
   font-weight: bolder;
-  background-color: rgb(77, 133, 127);
+  background-color: rgb(81, 161, 153);
   padding: 10px 20px;
   font-weight: bolder;
   margin-left: -5px;
@@ -460,7 +500,7 @@ input[type="checkbox"]:checked {
   margin-left: -5px;
 }
 .medium {
-  color: rgb(119, 163, 25);
+  color: rgb(85, 108, 37);
   border: none;
   border-radius: 30px;
   padding: 10px 20px;
@@ -503,6 +543,7 @@ input[type="checkbox"]:checked {
 .descriptions-todo-container {
   max-height: 300px;
   overflow-y: auto;
+  color:  rgb(174, 169, 169);
 }
 
 .descriptions-todo-form {
@@ -515,6 +556,8 @@ input[type="checkbox"]:checked {
 }
 .task-todo-placeholder {
   text-align: left;
+  background-color: rgb(74, 65, 65);
+  color:rgb(232, 219, 219);
 }
 
 .todo-item {
@@ -538,10 +581,12 @@ input[type="checkbox"]:checked {
 .todo-item.done .todo-item-text {
   text-decoration: line-through;
   color: #999;
+
 }
 
 .todo-item.done {
   opacity: 0.5;
+  background-color:  rgb(48, 43, 43);
 }
 
 .category-button-form {
@@ -564,6 +609,8 @@ input[type="checkbox"]:checked {
   padding: 10px;
   overflow-y: auto;
   text-transform: capitalize;
+ color:  rgb(174, 169, 169);
+
 }
 
 .overlay {
@@ -580,11 +627,12 @@ input[type="checkbox"]:checked {
 }
 
 .message {
-  background-color: white;
+  background-color: rgb(67, 53, 53);
   border-radius: 10px;
   padding: 20px;
   text-align: center;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+color:rgb(232, 219, 219);
 }
 
 .message p {
@@ -602,6 +650,7 @@ input[type="checkbox"]:checked {
   font-weight: lighter;
   font-size: 15px;
   margin-left: 5px;
+  color:  rgb(174, 169, 169);
 }
 
 .h1-todo {
@@ -615,9 +664,31 @@ input[type="checkbox"]:checked {
 }
 
 .undo-button {
-  border: 1px solid brown;
+  border: none;
   border-radius: 10px;
-  background-color: yellow;
-  margin-left: 430px;
-  margin-bottom: 500px;
+  background-color: #fdd835; /* using a shade of yellow from the Material Design palette */
+  color: #333; /* adding text color to increase contrast */
+  padding: 8px 16px; /* adding some padding for better spacing */
+  font-weight: bold; /* making the text more prominent */
+  text-transform: uppercase; /* making the text uppercase for emphasis */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* adding a subtle shadow effect */
+  transition: transform 0.2s ease-in-out, background-color 0.2s ease-in-out; /* adding some animation effects */
+}
+
+.undo-button:hover {
+  background-color: #ffeb3b; /* changing to a lighter shade of yellow on hover */
+  transform: translateY(-2px); /* adding a slight lift effect on hover */
+}
+
+ .todo-edit-btn-cancel {
+  color: rgb(189, 172, 172);
+  background-color: rgba(16, 75, 44, 0.6);
+  text-shadow: 1px 1px 6px rgb(167, 167, 156);
+  letter-spacing: 4px;
+}
+.todo-edit-btn-done{
+  color: rgb(189, 172, 172);
+  background-color: rgba(39, 174, 102, 0.6);
+  text-shadow: 1px 1px 6px rgb(167, 167, 156);
+  letter-spacing: 7px;
 }

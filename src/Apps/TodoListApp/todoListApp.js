@@ -317,14 +317,15 @@ function TodoList() {
                   onChange={(e) => setEditingTodoDescription(e.target.value)}
                   placeholder="Task description"
                 />
+              
+                <button className="todo-edit-btn-done" onClick={handleDoneEdit}>
+                  Done
+                </button>
                 <button
                   className="todo-edit-btn-cancel"
                   onClick={handleCancelEditingText}
                 >
                   Cancel
-                </button>
-                <button className="todo-edit-btn-done" onClick={handleDoneEdit}>
-                  Done
                 </button>
               </div>
             ) : (

@@ -6,36 +6,47 @@
   margin: 90px auto;
   width: 30%;
   box-sizing: border-box;
-  border: 2px solid rgb(80, 78, 75);
+  border: 3px solid rgb(65, 59, 59);
   padding: 40px;
   border-radius: 40px;
-  background-color: rgba(128, 128, 128, 0.2);
+  background-color:  rgb(42, 38, 38, 0.5);
+
+   box-shadow: -1px 0 10px rgba(0, 0, 0, 0.2);
+   
+  box-shadow: inset -20px -20px 400px rgb(28, 24, 24)
+
 }
 
 .session-label {
   font-size: 36px;
-  font-weight: bold;
   margin-bottom: 20px;
-  text-transform: uppercase;
+
+  text-transform: capitalize;
   border-radius: 30px;
   padding: 20px;
   margin-top: -10px;
+  color: rgb(173, 164, 166);
+  text-shadow: 2px 3px 5px rgb(101, 96, 98);
 }
 
 .timer {
-  font-size: 72px;
-  font-weight: bold;
+  font-size: 68px;
+  font-weight: bolder;
   height: 120px;
   width: 250px;
   box-sizing: border-box;
   border: 2px solid rgb(23, 22, 22);
   padding: 10px;
   border-radius: 60px;
-  background-color: #f2f2f2;
+  /* background-color: #f2f2f2; */
   display: flex;
   justify-content: center;
   align-items: center;
   margin-bottom: 25px;
+  background-color: rgb(116, 101, 101);
+  color: rgb(42, 36, 36);
+  box-shadow: inset 2px 2px 5px #aa939373, inset -5px -5px 10px #474344;
+  border: 3px solid rgb(180, 157, 157);
 }
 
 .button-container {
@@ -50,8 +61,9 @@
   border: none;
   border-radius: 5px;
   cursor: pointer;
-  background-color: #ddd;
-  color: #333;
+  background-color: rgb(96, 82, 82);
+  color: rgb(189, 172, 172);
+  text-shadow: 1px 1px 6px rgb(167, 167, 156);
   transition: background-color 0.2s, color 0.2s;
 }
 
@@ -61,14 +73,13 @@
 }
 
 .button-primary {
-  background-color: #333;
-  color: #fff;
+  color: rgb(189, 172, 172);
+  background-color: rgba(31, 66, 51, 0.6);
+  text-shadow: 1px 1px 6px rgb(167, 167, 156);
+  font-size: 20px;
+
 }
 
-.button-primary:hover {
-  background-color: #fff;
-  color: #333;
-}
 
 .active {
   background-color: #d43f3a;
@@ -81,5 +92,6 @@
   font-family: Arial, Helvetica, sans-serif;
   font-size: 32px;
   font-weight: bold;
-  text-shadow: 3px 5px 5px rgba(91, 118, 135, 0.9);
+  color: rgb(173, 164, 166);
+  text-shadow: 2px 3px 5px rgb(101, 96, 98);
 }

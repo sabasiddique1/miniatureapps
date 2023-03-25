@@ -18,35 +18,41 @@
   border: none;
   border-radius: 10px;
   text-transform: capitalize;
+  background-color: rgb(116, 101, 101);
+  color:rgb(232, 219, 219);
+
 }
 
 .weather-button {
   margin-top: 20px;
   padding: 10px 30px;
-  border-radius: 20px;
-  background-color: #1c3841;
-  color: white;
+  border-radius: 15px;
+  background-color: #63484d;  color: rgb(211, 207, 207);
   border: none;
   font-size: 20px;
   cursor: pointer;
+  box-sizing: border-box;
+  box-shadow:  2px 5px 20px #3a2a2d;
+ text-shadow: 1px 1px 10px rgb(54, 54, 50);
 }
 
 .weather-button:hover {
-  background-color: #2b5e70;
+  background-color:#632e38;;
 }
 
 .weather-data {
-  background-color: #f7f7f7;
-  border: 5px solid rgb(127, 143, 138);
+  background-color:  rgb(56, 48, 48);
+  border: 3px solid #63484d;
   border-radius: 10px;
   margin-top: 50px;
   padding: 50px;
   text-align: left;
   text-transform: capitalize;
-
+color: rgb(232, 219, 219);
 }
 .weather-data h3{
   text-align: left;
+  
 }
 
 .weather-h1 {
@@ -55,7 +61,11 @@
   font-family: Arial, Helvetica, sans-serif;
   font-size: 32px;
   font-weight: bold;
-  text-shadow: 3px 5px 5px rgba(91, 118, 135, 0.9);
+  /* text-shadow: 3px 5px 5px rgba(101, 111, 117, 0.9); */
+  /* color: rgb(233, 235, 205);
+  text-shadow: 1px 1px rgb(192, 193, 168); */
+  color: rgb(173, 164, 166);
+  text-shadow: 2px 3px 5px rgb(101, 96, 98);
 }
 
 .error-message {

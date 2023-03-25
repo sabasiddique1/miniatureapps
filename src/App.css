@@ -1,6 +1,5 @@
 .App {
   text-align: center;
-
 }
 
 .App-logo {
@@ -38,9 +37,6 @@
   }
 }
 body{
-  background-image: url('./Assests/Images/backgroundImage.mp4');
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center;
+  background-color: rgb(36, 33, 33);
 }
 

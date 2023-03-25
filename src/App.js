@@ -9,6 +9,7 @@ import WeatherApp from "./Apps/WeatherApp/weatherApp";
 import MemoryCard from "./Apps/MemoryCard/memoryCard";
 import { Switch, Route } from "react-router-dom";
 import SlideShow from "./Components/Slideshow/slideShow";
+import './App.css'
 
 const App = () => {
   return (

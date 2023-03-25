@@ -1,6 +1,7 @@
 import "./SlidesShow.css";
 import { useState } from "react";
 import Slider from "react-slick";
+import { Link } from "react-router-dom";
 
 import CalculatorVid from "../../Assests/Videos/calculatorvideo2.mp4";
 import MemoryCardVid from "../../Assests/Videos/memorygamevid.mp4";
@@ -104,10 +105,10 @@ function App() {
                   </div>
                 </div>
                 <div className="flip-card-back">
-                  <a href={backCard.link}>
+                  <Link to={backCard.link}>
                     <h3>{backCard.title}</h3>
                     <p>{backCard.description}</p>
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>
